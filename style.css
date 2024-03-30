@@ -216,7 +216,9 @@ body {
 .footer p {
     color: var(--colortext);
     padding-top: 32px;
-
+    & a {
+        color: var(--linkText);
+    }
     & a:hover {
         color: var(--linkHoverText);
     }
