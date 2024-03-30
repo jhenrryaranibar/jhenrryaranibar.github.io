@@ -217,7 +217,7 @@ body {
     color: var(--colortext);
     padding-top: 32px;
     & a {
-        color: var(--linkText);
+        color: var(--colortexto);
     }
     & a:hover {
         color: var(--linkHoverText);
