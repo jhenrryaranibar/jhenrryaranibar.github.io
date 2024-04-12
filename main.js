@@ -15,16 +15,14 @@ function redirectToYouTube() {
     }
 }
 
+
 function redirectToBehance() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
     var profileID = "jhenrryaranibar"; // Reemplaza esto con tu nombre de usuario de Behance
 
     // Detecta si el usuario está usando un dispositivo móvil
-    if (/android/i.test(userAgent)) {
-        // Redirige a la aplicación de Behance en Android
-        window.location.href = "intent://profile/" + profileID + "#Intent;package=com.behance.behance;scheme=https;end;";
-    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        // Redirige a la aplicación de Behance en iOS
+    if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent)) {
+        // Redirige a la aplicación de Behance en Android o iOS
         window.location.href = "behance://profile/" + profileID;
     } else {
         // Redirige al perfil de Behance en el navegador web para otras plataformas
