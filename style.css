@@ -133,12 +133,12 @@ body {
 
 .foto-perfil {
     padding-bottom: 16px;
+}
 
-    & img {
+.foto-perfil img {
         width: 100px;
         height: auto;
         border-radius: 100px;
-    }
 }
 
 .titulo-perfil,
@@ -152,11 +152,8 @@ body {
     width: 100%;
 }
 
-.btn-link {
-
-    & h3 {
+.btn-link h3 {
         padding: 16px 20px;
-    }
 }
 
 .btn-link:hover {
@@ -167,18 +164,13 @@ body {
 
 .btn-taj {
     position: relative;
+}
 
-    & btn-taj-img {
-        position: absolute;
-    }
-
-    & h3 {
+.btn-taj h3 {
         position: absolute;
         bottom: 0;
         margin: 16px;
         padding: 8px;
-    }
-
 }
 
 .btn-taj-img::after {
@@ -219,14 +211,14 @@ body {
 .footer p {
     color: var(--colortext);
     padding-top: 32px;
+}
 
-    & a {
+.footer p a {
         color: var(--colortexto);
-    }
+}
 
-    & a:hover {
+.footer p a:hover {
         color: var(--linkHoverText);
-    }
 }
 
 @media (max-width: 767px) {
